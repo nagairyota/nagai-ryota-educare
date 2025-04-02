@@ -16,15 +16,9 @@ public class Main9 {
                 break;
                 default:
                 System.out.println(num1 / num2);
-            }
-            switch(num1){
-                case 0:
-                System.out.println("エラー: 0で割ることはできません");
-                break;
-                default:
-                System.out.println(num1 / num2);
                 break;
             }
+            break;
 
             case '-':
             System.out.println(num1 - num2);
