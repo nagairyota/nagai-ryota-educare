@@ -2,8 +2,8 @@ public class Main3 {
     public static void main(String[] args) {
         int month = 4;
 
-        if(month < 1 && 12 < month){
-            System.out.println("");
+        if(month < 1 || 12 < month){
+            System.out.println("無効な月です。");
         } else if (3 <= month && month <= 5) {
             System.out.println("春");
         } else if(6 <= month && month <= 8){
