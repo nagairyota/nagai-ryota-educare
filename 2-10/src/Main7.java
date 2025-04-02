@@ -30,6 +30,9 @@ public class Main7 {
                 System.out.println("F");
                 break;
             }
+            default:
+            System.out.println("invailed key");
+            break;
         }
     }
 }
