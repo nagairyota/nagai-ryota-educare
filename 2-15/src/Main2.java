@@ -6,6 +6,6 @@ public class Main2 {
         for(int sale : sales){
             totalSales += sale;
         }
-        System.out.println(totalSales);
+        System.out.println("売上合計:" + totalSales + "円");
     }
 }
