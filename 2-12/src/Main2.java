@@ -4,6 +4,7 @@ public class Main2 {
             for(int a = 1; a < 10; a++){
                 System.out.println(i + "×" + a + "=" + i*a);
             }
+            System.out.println();
         }
     }
 }
