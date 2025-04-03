@@ -8,12 +8,18 @@ public class Main4 {
         seats[3][5] = 1;
         seats[4][2] = 1;
 
+        System.out.println("現在の座席状況:");
+        for (int i = 0; i < seats.length; i++) {
+            for (int j = 0; j < seats[i].length; j++) {
+                System.out.print("[" + seats[i][j] + "]" + " ");
+            }
+            System.out.println();
+        }
+
         int[][] reserve = {
             {2,3},
-            {-1,10},
-            {3,4},
-            {0,0},
-            {0,0}
+            {5,6},
+            {2,3}
         };
         for(int[] seat : reserve){
             int row = seat[0];
@@ -29,14 +35,6 @@ public class Main4 {
             } else if(seats[row][col] == 1){
                 System.out.println("指定された座席はすでに予約済みです。");
             }
-        }
-
-        System.out.println("現在の座席状況:");
-        for (int i = 0; i < seats.length; i++) {
-            for (int j = 0; j < seats[i].length; j++) {
-                System.out.print("[" + seats[i][j] + "]" + " ");
-            }
-            System.out.println();
         }
     }
 }
