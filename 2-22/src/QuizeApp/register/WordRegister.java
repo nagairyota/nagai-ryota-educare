@@ -62,6 +62,6 @@ public class WordRegister{
         }
         // 入力規制・全角
         public static boolean toFullWidth(String str){
-            return str.matches("^[\\p{IsHiragana} + \\p{IsHan}]");
+            return str.matches("^[\\p{InHiragana}\\p{InKatakana}\\p{InCJKUnifiedIdeographs}ー～、。「」]+$");
         }
 }
