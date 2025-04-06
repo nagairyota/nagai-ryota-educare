@@ -21,7 +21,7 @@ public class Main{
                 case 1:
                 wordList = WordRegister.saveToWords();
                 break;
-                    
+                
                 case 2:
                 if(wordList != null && !wordList.isEmpty()){
                     WordQuiz.work(wordList);
@@ -29,7 +29,7 @@ public class Main{
                     break;
                 }
                 break;
-                    
+
                 case  3:
                 System.out.println("終了します。");
                 System.exit(0);
