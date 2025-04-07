@@ -27,7 +27,7 @@ public class WordRegister{
                     col = scan.nextLine();
                     if(toFullWidth(col)){
                         break;
-                    } else if (col == null || !toFullWidth(col)) {
+                    } else{
                         System.out.println("全角で入力してください。");
                     }
                 }
@@ -49,6 +49,10 @@ public class WordRegister{
         }
         // 入力規制・全角
         public static boolean toFullWidth(String str){
-            return str.matches("^[^\\x00-\\x7F]+$");
+            return str.matches("^[\\p{InHiragana}\\p{InKatakana}]+$");
         }
+        // "^[^\\x00-\\x7F]*$"
+        // "^[^\\x01-\\x7E\\xA1-\\xDF]+$"
+        // "^[^\\x00-\\x7F]+$"
+        // "^[\\p{InHiragana}\\p{InKatakana}]+$"
 }
