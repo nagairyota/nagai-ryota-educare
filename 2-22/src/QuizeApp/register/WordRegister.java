@@ -4,22 +4,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WordRegister{
-    public static ArrayList<String[]> saveToWords(){
+    public static String[] saveToWords(ArrayList<String> enList, ArrayList<String> jpList){
         Scanner scan = new Scanner(System.in);
         // 英語・日本語格納リスト
         ArrayList<String[]> ar = new ArrayList<>();
-        // 日本語リスト
-        ArrayList<String> jp = new ArrayList<>();
-        // 英語リスト
-        ArrayList<String> en = new ArrayList<>();
-
-        int count = 0;
-            // 21回目以降のエラー文出力
-            while(count < 25){
-                if(count >= 20){
-                    System.out.println("21回目の入力をしようとしています。");
-                    break;
-                }
+            while(true){
                 // 英単語の保存（半角入力）
                 System.out.println("英単語を入力してください：");
                 String row;
@@ -43,18 +32,16 @@ public class WordRegister{
                     }
                 }
                 System.out.println();
-                en.add(row);
-                jp.add(col);
-
                 // 英語リストと日本語訳リストを1つのリストに格納
+                enList.add(row);
+                jpList.add(col);
+
                 String[] pair = new String[2];
-                pair[0] = en.get(count);
-                pair[1] = jp.get(count);
-                ar.add(pair);
-                count++;
+                pair[0] = row;
+                pair[1] = col;
                 System.out.println();
+                return pair;
             }
-            return ar;
     }
         //入力規制・半角
         public static boolean  toHalfWidth(String str){
