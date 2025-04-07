@@ -40,11 +40,12 @@ public class Main{
                 break;
                 
                 case 2:
-                if(!wordList.isEmpty()){
-                    WordQuiz.work(wordList);
-                } else{
+                if(wordList.isEmpty()){
+                    System.out.println("単語が登録されていません");
                     break;
                 }
+                WordQuiz wr = new WordQuiz();
+                wr.work(wordList);
                 break;
 
                 case  3:
