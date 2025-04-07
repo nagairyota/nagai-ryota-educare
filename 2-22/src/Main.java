@@ -17,12 +17,14 @@ public class Main{
         while(true){
             System.out.println("以下の選択肢を表示します：");
             System.out.println("1: 単語を登録する\n" + "2: クイズを受ける\n" + "3: 終了する");
-            int num = scan.nextInt();
+            String input = scan.nextLine();
 
-            if(num < 0 || num > 3){
-                System.out.println("無効な入力です。");
-                break;
+            if(!input.matches("^[1-3]$")){
+                System.out.println("1-3の数字を入力してください");
+                continue;
             }
+
+            int num = Integer.parseInt(input);
             
             switch(num){
                 case 1:
