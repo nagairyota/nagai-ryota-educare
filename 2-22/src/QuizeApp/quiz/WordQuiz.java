@@ -1,6 +1,5 @@
 package QuizeApp.quiz;
 
-import QuizeApp.register.WordRegister;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -23,7 +22,8 @@ public class WordQuiz {
             while (true) {
                 answer = scan.nextLine();
                 // 入力規制（全角）
-                if (WordRegister.toFullWidth(answer)) {
+                if (answer.matches("^[\\p{InHiragana}\\p{InKatakana}\\p{InCJKUnifiedIdeographs}]+$"
+)) {
                     break;
                 } else {
                     System.out.println("全角もしくは文字が入力されていません。再度入力してください。");
