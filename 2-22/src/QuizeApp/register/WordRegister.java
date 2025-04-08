@@ -14,9 +14,9 @@ public class WordRegister{
                 String row;
                 while (true) {
                     row = scan.nextLine();
-                    if(toHalfWidth(row)){
+                    if(row.matches("^[a-zA-z]+$")){
                         break;
-                    } else if((row == null) || !toHalfWidth(row)){
+                    } else{
                         System.out.println("全角もしくは文字が入力されていません。再度入力してください。");
                     }
                 }
@@ -25,7 +25,8 @@ public class WordRegister{
                 String col;
                 while (true) {
                     col = scan.nextLine();
-                    if(toFullWidth(col)){
+                    if(col.matches("^[\\p{InHiragana}\\p{InKatakana}\\p{InCJKUnifiedIdeographs}]+$"
+)){
                         break;
                     } else{
                         System.out.println("全角で入力してください。");
@@ -43,14 +44,6 @@ public class WordRegister{
                 return pair;
             }
     }
-        //入力規制・半角
-        public static boolean  toHalfWidth(String str){
-            return str.matches("^[a-zA-z]+$");
-        }
-        // 入力規制・全角
-        public static boolean toFullWidth(String str){
-            return str.matches("^[\\p{InHiragana}\\p{InKatakana}]+$");
-        }
         // "^[^\\x00-\\x7F]*$"
         // "^[^\\x01-\\x7E\\xA1-\\xDF]+$"
         // "^[^\\x00-\\x7F]+$"
