@@ -18,8 +18,13 @@ public class Main1{
         System.out.println("]");
 
         // 2番目の学生
-        String student2 = student.get(1);
-        System.out.println("２番目の学生： " + student2);
+        int i = 1;
+        if(i >= 0 && i < student.size()){
+            String student2 = student.get(i);
+            System.out.println((i + 1) + "番目の学生： " + student2);
+        }else{
+            System.out.println("存在しない学生です");
+        }
 
         // 学生リストに鈴木さんが含まれているどうか
         System.out.println("鈴木さんは含まれていますか？： " + student.contains("鈴木"));
