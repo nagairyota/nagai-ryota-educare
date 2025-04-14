@@ -26,6 +26,9 @@ public class Main1{
             System.out.println("存在しない学生です");
         }
 
+        // 学生数を表示
+        System.out.println("学生数: " + student.size());
+
         // 学生リストに鈴木さんが含まれているどうか
         System.out.println("鈴木さんは含まれていますか？： " + student.contains("鈴木"));
     }
