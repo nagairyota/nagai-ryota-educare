@@ -12,7 +12,7 @@ public class ArrayAccessor {
     // 2. 位置が範囲外の場合は例外をスロー
     // 3. 適切な例外処理を行う
     public int getElement(int index) throws ArrayIndexOutOfBoundsException{
-        if(index < 0 || index > array.length){
+        if(index < 0 || index >= array.length){
             throw new ArrayIndexOutOfBoundsException("エラー：指定された位置は範囲外です");
         }
         return array[index];
