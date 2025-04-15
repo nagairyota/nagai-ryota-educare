@@ -21,7 +21,7 @@ public class InventoryManager {
     }
     
     // TODO: 商品を検索するメソッド（Optional使用）
-    public Optional<Product> findProduct(String name) {
+    private Optional<Product> findProduct(String name) {
         // TODO: 商品を検索してOptionalでラップして返す
         return Optional.ofNullable(inventory.get(name));
     }
