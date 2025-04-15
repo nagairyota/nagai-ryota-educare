@@ -10,7 +10,6 @@ public class Main4 {
         manager.sellProduct("バナナ");
         // TODO: 存在しない商品を検索
         System.out.print("存在しない商品の検索: ");
-        manager.findProduct("りんご");
         manager.sellProduct("りんご");
     }
 }
