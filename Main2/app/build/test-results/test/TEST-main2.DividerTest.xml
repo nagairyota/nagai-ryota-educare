@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="main2.DividerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-13T14:48:32" hostname="RYOTA" time="0.02">
-  <properties/>
-  <testcase name="testExceptionDivision()" classname="main2.DividerTest" time="0.015"/>
-  <testcase name="testNormalDivision()" classname="main2.DividerTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
