@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="main3.RPGCharacterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-13T15:32:55" hostname="RYOTA" time="0.025">
+  <properties/>
+  <testcase name="testNormalLevelUp()" classname="main3.RPGCharacterTest" time="0.017"/>
+  <testcase name="testMaxLevel()" classname="main3.RPGCharacterTest" time="0.002"/>
+  <testcase name="testInitialStatus()" classname="main3.RPGCharacterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
